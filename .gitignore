@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Secrets and key material
+*.key
+*.pem
+*.hex
+*_key.txt
+*_pubkey.txt
+helper_data.json
+enrollment_data/
+
+# Generated cryptographic material
+peer_public_key.bin
+private_key.bin
+secret_key.bin
+puf_root_key.txt
+puf_key.txt
+
+# Machine-learning models
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# Experimental datasets
+*.npz
+*.npy
+*.csv
+
+# Runtime logs
+*.log
+handshake_logs/
+handshake_logs_clean/
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
