@@ -2,53 +2,45 @@
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
 
 # Virtual environments
-venv/
 .venv/
+venv/
 env/
-ENV/
 
-# Secrets and key material
+# Runtime / generated security material
+enrollment_data/
+debug_v2/
+debug_v2_both/
 *.key
 *.pem
+*.secret
+*.bin
 *.hex
-*_key.txt
-*_pubkey.txt
-helper_data.json
-enrollment_data/
 
-# Generated cryptographic material
-peer_public_key.bin
-private_key.bin
-secret_key.bin
+# PUF material
+*_puf.txt
+*puf*.key
 puf_root_key.txt
-puf_key.txt
+alice_puf.txt
+bob_puf.txt
 
-# Machine-learning models
-*.pkl
-*.joblib
+# ML / SCA generated artifacts
 *.pt
 *.pth
-
-# Experimental datasets
+*.pkl
+*.joblib
 *.npz
 *.npy
+
+# Captured traces / datasets
+traces/
+captures/
 *.csv
 
-# Runtime logs
+# Logs
 *.log
-handshake_logs/
-handshake_logs_clean/
 
-# Temporary files
-/tmp/
-*.tmp
-*.bak
-
-# OS/editor files
+# OS
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
